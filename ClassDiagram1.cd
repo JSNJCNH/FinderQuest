@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FinderQuest.Players">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAggAAAAIAAAAgAAAAIAAQAAAAEAAAJQAAAAIAAAAA=</HashCode>
+      <FileName>Players.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="playTime" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="TimeApplication.Time">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAgAAAAMAAAAAASIAAAAiAAAAAAA=</HashCode>
+      <FileName>Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinderQuest.Questions">
+    <Position X="12.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAIAAAAAAQAAAAEAAAAAgAAAAI=</HashCode>
+      <FileName>Questions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinderQuest.People">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAggACIAIAAIAAAACBCAAQAAAAUAAAAEAgAAAAAAAA=</HashCode>
+      <FileName>People.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="personQuestion" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FinderQuest.Areas">
+    <Position X="1.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAgAAAAIAA=</HashCode>
+      <FileName>Areas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinderQuest.TalkAreas">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>TalkAreas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinderQuest.WalkAreas">
+    <Position X="3.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FCAgABAAAAAAAAAAAAAAAABBAAAgAAAAAAAAAAAgAEA=</HashCode>
+      <FileName>WalkAreas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FinderQuest.Record">
+    <Position X="8.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAAAAAAgAAAAIAAQAAAAEAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Record.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
