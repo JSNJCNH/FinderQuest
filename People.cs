@@ -8,6 +8,7 @@ using System.Drawing;
 namespace FinderQuest
 {
     //jeco//
+    //mekel//
     public class People
     {
         private int noPerson;
