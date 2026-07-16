@@ -7,6 +7,7 @@ using System.Drawing;
 
 namespace FinderQuest
 {
+    //jeco//
     public class People
     {
         private int noPerson;
