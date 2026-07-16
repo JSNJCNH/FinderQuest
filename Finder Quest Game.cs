@@ -19,6 +19,7 @@ namespace FinderQuest
 {
     public partial class Finder_Quest_Game : Form
     {
+        //calon cumlaude
         Time time;
 
         int numOfWalkArea = 3;
