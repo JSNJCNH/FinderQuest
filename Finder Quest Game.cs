@@ -48,7 +48,7 @@ namespace FinderQuest
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            
         }
 
         private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -58,6 +58,8 @@ namespace FinderQuest
 
         private void Finder_Quest_Game_Load(object sender, EventArgs e)
         {
+            panelHome.Visible = true;
+            menuStrip1.Visible = false;
             panelGame.Visible = false;
             labelTime.Visible = false;
 
@@ -68,6 +70,11 @@ namespace FinderQuest
             this.DoubleBuffered = true;
 
             panelTalkArea.Visible = false;
+
+            //Supaya Button Start tidak terlalu terhover dan berwarna putih
+            buttonStart.FlatAppearance.BorderSize = 0;
+
+
         }
 
         private void TimerTime_Tick(object sender, EventArgs e)
@@ -99,8 +106,9 @@ namespace FinderQuest
         {
             panelGame.Visible = true;
             labelTime.Visible = true;
+            menuStrip1.Visible = true;
             playPauseToolStripMenuItem.Enabled = true;
-            startNewGameToolStripMenuItem.Enabled = false;
+            panelHome.Visible = false;
 
             playPauseToolStripMenuItem.Text = "Pause Game";
 
@@ -144,7 +152,8 @@ namespace FinderQuest
 
             panelGame.Visible = false;
             labelTime.Visible = false;
-            startNewGameToolStripMenuItem.Enabled = true;
+            menuStrip1.Visible = false;
+            panelHome.Visible = true;
             playPauseToolStripMenuItem.Text = "Play/Pause";
             playPauseToolStripMenuItem.Enabled = false;
 
@@ -392,24 +401,6 @@ namespace FinderQuest
             otherSoundPlayer.controls.play();
         }
 
-        private void playPauseToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (playPauseToolStripMenuItem.Text == "Pause Game")
-            {
-                paused = true;
-                timerTime.Stop();
-                playPauseToolStripMenuItem.Text = "Play Game";
-                backSoundPlayer.controls.pause();
-            }
-            else
-            {
-                paused = false;
-                timerTime.Start();
-                playPauseToolStripMenuItem.Text = "Pause Game";
-                backSoundPlayer.controls.play();
-            }
-        }
-
         public void SaveLeaderboard(string fileName)
         {
             FileStream file = new FileStream(fileName, FileMode.Create, FileAccess.Write);
@@ -418,11 +409,44 @@ namespace FinderQuest
             file.Close();
         }
 
-        private void leaderboardToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            StartGame();
+        }
+
+        private void buttonLeaderboard_Click(object sender, EventArgs e)
         {
             FormLeaderboard form = new FormLeaderboard();
             form.Owner = this;
             form.ShowDialog();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void buttonInformation_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Press arrow key to move player. \n\nPress Enter to talk with the person. " + "\n\nPress Y key to answer the question. \n\nPress Esc to exit the talk area.", "How to Play");
+        }
+
+        private void playPauseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (playPauseToolStripMenuItem.Text == "|| Pause Game")
+            {
+                paused = true;
+                timerTime.Stop();
+                playPauseToolStripMenuItem.Text = "> Play Game";
+                backSoundPlayer.controls.pause();
+            }
+            else
+            {
+                paused = false;
+                timerTime.Start();
+                playPauseToolStripMenuItem.Text = "|| Pause Game";
+                backSoundPlayer.controls.play();
+            }
         }
     }
 }

@@ -187,5 +187,17 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leaderboard Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit Button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
