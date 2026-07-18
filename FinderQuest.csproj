@@ -223,5 +223,14 @@
   <ItemGroup>
     <None Include="Resources\Back to Menu Button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info Setting Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paused Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchant Character.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

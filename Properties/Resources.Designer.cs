@@ -123,6 +123,16 @@ namespace FinderQuest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Info_Setting_Button {
+            get {
+                object obj = ResourceManager.GetObject("Info Setting Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Leaderboard_Button {
             get {
                 object obj = ResourceManager.GetObject("Leaderboard Button", resourceCulture);
@@ -136,6 +146,26 @@ namespace FinderQuest.Properties {
         internal static System.Drawing.Bitmap Menu_Button {
             get {
                 object obj = ResourceManager.GetObject("Menu Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Merchant_Character {
+            get {
+                object obj = ResourceManager.GetObject("Merchant Character", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paused_Title {
+            get {
+                object obj = ResourceManager.GetObject("Paused Title", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
