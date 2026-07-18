@@ -357,9 +357,9 @@ namespace FinderQuest
             panelTalkArea.BackgroundImage = currentTalkArea.Background;
             panelTalkArea.Visible = true;
             panelTalkArea.BringToFront();
-
-            activePerson.Picture.Size = new Size(200, 300);
-            activePerson.Picture.Location = new Point(300, 100);
+            
+            activePerson.Picture.Size = new Size(300, 400);
+            activePerson.Picture.Location = new Point((panelTalkArea.Width - activePerson.Picture.Width) / 2, (panelTalkArea.Height - activePerson.Picture.Height) / 2 + 120);
             activePerson.DisplayPicture(panelTalkArea);
 
             if (activePerson.SolvedStatus == true)

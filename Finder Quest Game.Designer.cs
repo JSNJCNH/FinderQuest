@@ -54,7 +54,7 @@
             this.panelGame.Controls.Add(this.labelPlayer);
             this.panelGame.Controls.Add(this.labelTime);
             this.panelGame.Controls.Add(this.labelArea);
-            this.panelGame.Location = new System.Drawing.Point(1, 0);
+            this.panelGame.Location = new System.Drawing.Point(0, 0);
             this.panelGame.Name = "panelGame";
             this.panelGame.Size = new System.Drawing.Size(1146, 102);
             this.panelGame.TabIndex = 1;
@@ -95,9 +95,9 @@
             this.panelTalkArea.AutoSize = true;
             this.panelTalkArea.BackColor = System.Drawing.Color.Transparent;
             this.panelTalkArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelTalkArea.Location = new System.Drawing.Point(1, 102);
+            this.panelTalkArea.Location = new System.Drawing.Point(1, 101);
             this.panelTalkArea.Name = "panelTalkArea";
-            this.panelTalkArea.Size = new System.Drawing.Size(1146, 650);
+            this.panelTalkArea.Size = new System.Drawing.Size(1146, 651);
             this.panelTalkArea.TabIndex = 2;
             // 
             // buttonLeaderboard
@@ -171,9 +171,9 @@
             this.BackgroundImage = global::FinderQuest.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1147, 744);
+            this.Controls.Add(this.panelGame);
             this.Controls.Add(this.panelTalkArea);
             this.Controls.Add(this.panelHome);
-            this.Controls.Add(this.panelGame);
             this.DoubleBuffered = true;
             this.KeyPreview = true;
             this.Name = "Finder_Quest_Game";

@@ -72,12 +72,12 @@ namespace FinderQuest
         {
             Label labelDialog = new Label();
             labelDialog.Parent = container;
-            labelDialog.Size = new Size(500, 90);
+            labelDialog.Size = new Size(750, 180);
             labelDialog.Text = this.DisplayData();
             labelDialog.Font = new Font("Times New Roman", 18);
-            labelDialog.TextAlign = ContentAlignment.TopCenter;
+            labelDialog.TextAlign = ContentAlignment.MiddleCenter;
 
-            labelDialog.Location = new Point(this.Picture.Location.X - 150, 10);
+            labelDialog.Location = new Point((container.Width - labelDialog.Width) / 2, this.Picture.Location.Y - labelDialog.Height - 20);
             labelDialog.BackColor = Color.PaleGoldenrod;
             labelDialog.BorderStyle = BorderStyle.FixedSingle;
             labelDialog.Visible = true;
