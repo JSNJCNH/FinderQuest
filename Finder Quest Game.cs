@@ -73,8 +73,6 @@ namespace FinderQuest
 
             //Supaya Button Start tidak terlalu terhover dan berwarna putih
             buttonStart.FlatAppearance.BorderSize = 0;
-
-
         }
 
         private void TimerTime_Tick(object sender, EventArgs e)
@@ -154,6 +152,7 @@ namespace FinderQuest
             labelTime.Visible = false;
             menuStrip1.Visible = false;
             panelHome.Visible = true;
+
             playPauseToolStripMenuItem.Text = "Play/Pause";
             playPauseToolStripMenuItem.Enabled = false;
 
@@ -179,7 +178,7 @@ namespace FinderQuest
 
             if (paused == false)
             {
-                if (e.KeyCode == Keys.Right)
+                if (e.KeyCode == Keys.Right || e.KeyCode == Keys.D)
                 {
                     if (player.Picture.Location.X + player.Picture.Width >= Width - 20)
                     {
@@ -213,7 +212,7 @@ namespace FinderQuest
                         player.DisplayPicture(this);
                     }
                 }
-                else if (e.KeyCode == Keys.Left)
+                else if (e.KeyCode == Keys.Left || e.KeyCode == Keys.A)
                 {
                     if (player.Picture.Location.X >= 10)
                         player.MoveLeft(distance);
@@ -232,7 +231,25 @@ namespace FinderQuest
                 }
                 else if (e.KeyCode == Keys.Escape)
                 {
-                    ExitTalkArea();
+                    if (activePerson != null)
+                    {
+                        ExitTalkArea();
+                    }
+                    else if (paused == false)
+                    {
+                        paused = true;
+                        timerTime.Stop();
+                        backSoundPlayer.controls.pause();
+
+                        FormPause form = new FormPause();
+                        form.Size = this.ClientSize;
+                        form.Location = this.PointToScreen(Point.Empty);
+                        form.ShowDialog();
+
+                        paused = false;
+                        timerTime.Start();
+                        backSoundPlayer.controls.play();
+                    }
                 }
                 else if (e.KeyCode == Keys.Y && activePerson?.SolvedStatus == false)
                 {
