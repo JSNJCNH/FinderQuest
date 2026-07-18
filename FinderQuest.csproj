@@ -71,6 +71,12 @@
     <Compile Include="FormQuestion.Designer.cs">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="MerchantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MerchantForm.Designer.cs">
+      <DependentUpon>MerchantForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="People.cs" />
     <Compile Include="Players.cs" />
     <Compile Include="Program.cs" />

@@ -41,6 +41,9 @@ namespace FinderQuest
         public List<Record> listLeaderboard = new List<Record>();
         string fileDefLeaderboard = "Leaderboard.dat";
 
+        public List<Questions> DaftarSoal = new List<Questions>();
+        private List<Questions> soalTersedia = new List<Questions>();
+
         public Finder_Quest_Game()
         {
             InitializeComponent();
@@ -68,6 +71,64 @@ namespace FinderQuest
 
             //Supaya Button Start tidak terlalu terhover dan berwarna putih
             buttonStart.FlatAppearance.BorderSize = 0;
+
+            DaftarSoal.Add(new Questions("Berapa hasil dari 2 + 2?", "4", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 10 - 5?", "5", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 5 x 5?", "25", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 100 / 10?", "10", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 3 + 9?", "12", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 20 - 8?", "12", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 6 x 6?", "36", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 15 + 15?", "30", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 50 / 5?", "10", 20));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 7 + 8?", "15", 20));
+            DaftarSoal.Add(new Questions("Apa ibu kota Indonesia?", "Jakarta", 20));
+            DaftarSoal.Add(new Questions("Apa ibu kota Jepang?", "Tokyo", 20));
+            DaftarSoal.Add(new Questions("Apa ibu kota Perancis?", "Paris", 20));
+            DaftarSoal.Add(new Questions("Apa ibu kota Inggris?", "London", 20));
+            DaftarSoal.Add(new Questions("Apa ibu kota Korea Selatan?", "Seoul", 20));
+
+            DaftarSoal.Add(new Questions("Berapa hasil dari 12 x 8?", "96", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari akar kuadrat 81?", "9", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 15% dari 200?", "30", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 7 pangkat 2?", "49", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 9 x 9?", "81", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari akar kuadrat 121?", "11", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 144 / 12?", "12", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 18 x 4?", "72", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 25% dari 400?", "100", 50));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 11 x 11?", "121", 50));
+            DaftarSoal.Add(new Questions("Gunung tertinggi di dunia adalah?", "Everest", 50));
+            DaftarSoal.Add(new Questions("Benua terbesar di dunia adalah?", "Asia", 50));
+            DaftarSoal.Add(new Questions("Samudra terluas di dunia adalah?", "Pasifik", 50));
+            DaftarSoal.Add(new Questions("Sungai terpanjang di dunia adalah?", "Nil", 50));
+            DaftarSoal.Add(new Questions("Negara dengan populasi terbanyak di dunia adalah?", "China", 50));
+
+            DaftarSoal.Add(new Questions("Solve this math equation: \n x + y = 10 \n If x = 3, then y = ?", "7", 100));
+            DaftarSoal.Add(new Questions("What is the capital city of Indonesia?", "Jakarta", 100));
+            DaftarSoal.Add(new Questions("Berapa nilai phi (π) dibulatkan 2 desimal?", "3.14", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 13 x 13?", "169", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil logaritma dari log 100 (basis 10)?", "2", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 17 x 17?", "289", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari akar kuadrat 225?", "15", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 2 pangkat 8?", "256", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 19 x 19?", "361", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 30% dari 750?", "225", 100));
+            DaftarSoal.Add(new Questions("Palung laut terdalam di dunia adalah?", "Palung Mariana", 100));
+            DaftarSoal.Add(new Questions("Candi Borobudur terletak di provinsi?", "Jawa Tengah", 100));
+            DaftarSoal.Add(new Questions("Negara terkecil di dunia berdasarkan luas wilayah adalah?", "Vatikan", 100));
+            DaftarSoal.Add(new Questions("What is the chemical compound name for sulfuric acid?", "H2SO4", 150));
+            DaftarSoal.Add(new Questions("I have this pattern: \n 1  1  2  3  5  8 ... \nWhat is the next number?", "13", 150));
+
+            DaftarSoal.Add(new Questions("Check this C# codes: \n int result = 10/100; \nMessageBox.Show(result); \nWhat is the output?", "0", 200));
+            DaftarSoal.Add(new Questions("A product costs $100, discounted 10%, plus $5 shipping. \nHow much do you pay?", "95", 200));
+            DaftarSoal.Add(new Questions("What is the 1st principle (sila ke-1) of Pancasila?", "Ketuhanan Yang Maha Esa", 200));
+            DaftarSoal.Add(new Questions("Berapa nilai dari integral dari 2x dx?", "x^2 + C", 200));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 2 pangkat 10?", "1024", 200));
+            DaftarSoal.Add(new Questions("Berapa turunan kedua dari fungsi x^3?", "6x", 200));
+            DaftarSoal.Add(new Questions("Berapa nilai dari 5 faktorial (5!)?", "120", 200));
+
+            soalTersedia = new List<Questions>(DaftarSoal);
         }
 
         private void TimerTime_Tick(object sender, EventArgs e)
@@ -311,40 +372,56 @@ namespace FinderQuest
         {
             try
             {
+                string namaTempat = "";
+                Image gambarLatar = null;
+
                 if (activePerson.NoPerson == 1)
                 {
-                    currentTalkArea = new TalkAreas("Anna's House", Resources.talkArea1, activePerson);
-                    activePerson.AddQuestion("Solve this math equation: \n x + y = 10 \n If x = 3, then y = ?", "7", 100);
+                    namaTempat = "Anna's House";
+                    gambarLatar = Resources.talkArea1;
                 }
                 else if (activePerson.NoPerson == 2)
                 {
-                    currentTalkArea = new TalkAreas("Andy's Room", Resources.talkArea2, activePerson);
-                    activePerson.AddQuestion("What is the capital city of Indonesia ? ", "Jakarta", 50);
+                    namaTempat = "Andy's Room";
+                    gambarLatar = Resources.talkArea2;
                 }
                 else if (activePerson.NoPerson == 3)
                 {
-                    currentTalkArea = new TalkAreas("Bobby's Office", Resources.talkArea3, activePerson);
-                    activePerson.AddQuestion("I have this pattern: \n 1   1   2   3   5   8 ... \nWhat is the next number?", "13", 200);
+                    namaTempat = "Bobby's Office";
+                    gambarLatar = Resources.talkArea3;
                 }
                 else if (activePerson.NoPerson == 4)
                 {
-                    currentTalkArea = new TalkAreas("Rina's Room", Resources.talkArea4, activePerson);
-                    activePerson.AddQuestion("What is the chemical compound name for sulfuric acid?", "H2SO4", 250);
+                    namaTempat = "Rina's Room";
+                    gambarLatar = Resources.talkArea4;
                 }
                 else if (activePerson.NoPerson == 5)
                 {
-                    currentTalkArea = new TalkAreas("Tommy's Place", Resources.talkArea5, activePerson);
-                    activePerson.AddQuestion("Check this C# codes: \n int result = 10/100; \nMessageBox.Show(result); \nWhat is the output of these codes?", "0", 170);
+                    namaTempat = "Tommy's Place";
+                    gambarLatar = Resources.talkArea5;
                 }
                 else if (activePerson.NoPerson == 6)
                 {
-                    currentTalkArea = new TalkAreas("Marie's Place", Resources.talkArea6, activePerson);
-                    activePerson.AddQuestion("A product has a selling price of $100 and is discounted 10% off the list price. It also has a shipping fee of $5. \nIf you want to purchase this product, how much will you have to pay?", "95", 300);
+                    namaTempat = "Marie's Place";
+                    gambarLatar = Resources.talkArea6;
                 }
                 else if (activePerson.NoPerson == 7)
                 {
-                    currentTalkArea = new TalkAreas("Luke's House", Resources.talkArea7, activePerson);
-                    activePerson.AddQuestion("What is the 1st principle(sila ke - 1) of Pancasila ? ", "Ketuhanan Yang Maha Esa", 150);
+                    namaTempat = "Luke's House";
+                    gambarLatar = Resources.talkArea7;
+                }
+
+                currentTalkArea = new TalkAreas(namaTempat, gambarLatar, activePerson);
+
+                // Kasih soal random cuma kalau NPC ini belum punya soal
+                if (activePerson.PersonQuestion == null)
+                {
+                    Random rnd = new Random();
+                    int index = rnd.Next(soalTersedia.Count);
+                    Questions soalTerpilih = soalTersedia[index];
+
+                    activePerson.PersonQuestion = soalTerpilih;
+                    soalTersedia.RemoveAt(index);
                 }
             }
             catch (Exception ex)
