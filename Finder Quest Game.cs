@@ -46,11 +46,6 @@ namespace FinderQuest
             InitializeComponent();
         }
 
-        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Press arrow key to move player. \n\nPress Enter to talk with the person. " +"\n\nPress Y key to answer the question. \n\nPress Esc to exit the talk area.", "How to Play");
@@ -103,6 +98,7 @@ namespace FinderQuest
         private void StartGame()
         {
             panelGame.Visible = true;
+            panelGame.Focus();
             labelTime.Visible = true;
             menuStrip1.Visible = true;
             playPauseToolStripMenuItem.Enabled = true;
