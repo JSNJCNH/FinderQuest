@@ -118,85 +118,103 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="walkArea2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\walkArea2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="talkArea7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\talkArea7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="player_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\player_back.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="talkArea5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\talkArea5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="person6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="person4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="walkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\walkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="walkArea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\walkArea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="talkArea2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\talkArea2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="backgroundQuestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundQuestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="player_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\player_front.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="person7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Menu Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Menu Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="talkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\talkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="backgroundQuestion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundQuestion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="person2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="talkArea5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\talkArea5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Info Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Info Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="person4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="walkArea2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\walkArea2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="talkArea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\talkArea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Leaderboard Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Leaderboard Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Start Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Start Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="walkArea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\walkArea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="talkArea6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="player_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\player_left.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="person3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\person3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Leaderboard Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Leaderboard Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="talkArea7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\talkArea7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info Setting Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info Setting Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="talkArea4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Continue Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Continue Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="talkArea2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\talkArea2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="talkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\talkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_front.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="player_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="walkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\walkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paused Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paused Title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Info Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Info Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="person2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\person2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Start Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_back.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Exit Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Exit Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="player_left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_left.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back to Menu Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back to Menu Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="talkArea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\talkArea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Merchant Character" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Merchant Character.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

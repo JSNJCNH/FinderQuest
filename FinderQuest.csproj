@@ -71,6 +71,12 @@
     <Compile Include="FormQuestion.Designer.cs">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="MerchantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MerchantForm.Designer.cs">
+      <DependentUpon>MerchantForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="People.cs" />
     <Compile Include="Players.cs" />
     <Compile Include="Program.cs" />
@@ -207,6 +213,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Exit Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back to Menu Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Info Setting Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paused Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Merchant Character.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
