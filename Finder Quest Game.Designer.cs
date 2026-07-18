@@ -40,6 +40,7 @@
             this.buttonStart = new System.Windows.Forms.Button();
             this.panelHome = new System.Windows.Forms.Panel();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.timerPlayTime = new System.Windows.Forms.Timer(this.components);
             this.panelGame.SuspendLayout();
             this.panelHome.SuspendLayout();
             this.SuspendLayout();
@@ -164,6 +165,10 @@
             this.buttonExit.UseVisualStyleBackColor = true;
             this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
+            // timerPlayTime
+            // 
+            this.timerPlayTime.Tick += new System.EventHandler(this.timerPlayTime_Tick);
+            // 
             // Finder_Quest_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,5 +205,6 @@
         private System.Windows.Forms.Panel panelHome;
         private System.Windows.Forms.Button buttonStart;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.Timer timerPlayTime;
     }
 }

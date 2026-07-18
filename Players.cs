@@ -14,10 +14,11 @@ namespace FinderQuest
         private PictureBox picture;
         private int score;
         private Time playTime;
+        private Time maxTime; //ini yg 10 menit
             
 
         #region constructor
-        public Players(string name, Image image, Size size, Point location, Time playTime)
+        public Players(string name, Image image, Size size, Point location, Time playTime, Time maxTime)
         {
             this.Name = name;
             this.Picture = new PictureBox();
@@ -26,6 +27,7 @@ namespace FinderQuest
             this.Picture.Location = location;
             this.Score = 0;
             this.PlayTime = playTime;
+            this.MaxTime = maxTime;
         }
         #endregion
 
@@ -63,6 +65,8 @@ namespace FinderQuest
         }
 
         public Time PlayTime { get => playTime; set => playTime = value; }
+        public Time MaxTime { get => maxTime; set => maxTime = value; }
+
         #endregion
 
         #region methods

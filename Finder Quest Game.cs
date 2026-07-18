@@ -20,7 +20,7 @@ namespace FinderQuest
     public partial class Finder_Quest_Game : Form
     {
         //calon cumlaude
-        Time time;
+        Time maxTime, playTime;
 
         int numOfWalkArea = 3;
         WalkAreas currentWalkArea = null;
@@ -61,6 +61,7 @@ namespace FinderQuest
             labelTime.Visible = false;
 
             timerTime.Interval = 1000;
+            timerPlayTime.Interval = 1000;
 
             this.KeyPreview = true;
             this.DoubleBuffered = true;
@@ -131,12 +132,11 @@ namespace FinderQuest
 
         private void TimerTime_Tick(object sender, EventArgs e)
         {
-            time.AddWithSecond(-1);
+            maxTime.AddWithSecond(-1);
 
-            labelTime.Text = time.DisplayData();
-            labelPlayer.Text = player.DisplayData();
+            labelTime.Text = maxTime.DisplayData();
 
-            if(time.Hour == 0 && time.Minute == 0 && time.Second == 0)
+            if(maxTime.Hour == 0 && maxTime.Minute == 0 && maxTime.Second == 0)
             {
                 timerTime.Stop();
                 isWin = false;
@@ -161,8 +161,9 @@ namespace FinderQuest
             labelTime.Visible = true;
             panelHome.Visible = false;
 
-            time = new Time(0, 10, 0);
-            timerTime.Start();
+            maxTime = new Time(0, 10, 0);
+            playTime = new Time(0, 0, 0);
+            timerPlayTime.Start();
 
             if (currentWalkArea != null)
                 currentWalkArea.RemoveAllPeople();
@@ -170,7 +171,7 @@ namespace FinderQuest
             currentWalkArea = null;
             GenerateWalkArea();
 
-            player = new Players("John", Properties.Resources.player_right, new Size(50, 80), new Point(10, 660), time);
+            player = new Players("John", Properties.Resources.player_right, new Size(50, 80), new Point(10, 660), playTime, maxTime);
 
             labelPlayer.Text = player.DisplayData();
             player.DisplayPicture(this);
@@ -185,7 +186,7 @@ namespace FinderQuest
 
         private void GameOver(bool isWin)
         {
-            timerTime.Stop();
+            timerPlayTime.Stop();
 
             if(isWin && player != null)
             {
@@ -230,7 +231,12 @@ namespace FinderQuest
                 {
                     if (player.Picture.Location.X + player.Picture.Width >= Width - 20)
                     {
-                        if (currentWalkArea.CheckFinishAllQuestions())
+                        if (currentWalkArea.NoArea == 1)
+                        {
+                            currentWalkArea.NoArea++;
+                            GenerateWalkArea();
+                        }
+                        else if (currentWalkArea.CheckFinishAllQuestions())
                         {
                             if (currentWalkArea.NoArea < numOfWalkArea)
                             {
@@ -299,7 +305,7 @@ namespace FinderQuest
                         backSoundPlayer.controls.play();
                     }
                 }
-                else if (e.KeyCode == Keys.Y && activePerson?.SolvedStatus == false)
+                else if (e.KeyCode == Keys.Y && activePerson?.SolvedStatus == false && activePerson.NoPerson != 1)
                 {
                     FormQuestion form = new FormQuestion();
                     form.Owner = this;
@@ -319,29 +325,38 @@ namespace FinderQuest
             {
                 if (currentWalkArea == null)
                 {
-                    currentWalkArea = new WalkAreas("The Barn", Properties.Resources.walkArea1, 1);
+                    currentWalkArea = new WalkAreas("Basecamp", Properties.Resources.walkArea1, 1);
 
-                    currentWalkArea.AddPerson(1, "Anna", Properties.Resources.person1, new Size(50, 80), new Point(150, 660), "I have a question for you. Are you ready? \nPress 'y' to continue.");
-                    currentWalkArea.AddPerson(2, "Andy", Properties.Resources.person2, new Size(50, 80), new Point(420, 660), "Can you answer my question? Let's Go! \nPress 'y' to continue.");
-                    currentWalkArea.AddPerson(3, "Bobby", Properties.Resources.person3, new Size(50, 80), new Point(600, 670), "Just answer my question please... \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(1, "Merchant", Properties.Resources.Merchant_Character, new Size(376, 211), new Point(600, 530), "Welcome to my humble shop. \nPress 'y' to continue.");
                 }
                 else if (currentWalkArea.NoArea == 2)
                 {
+                    timerTime.Start();
                     currentWalkArea.RemoveAllPeople();
 
-                    currentWalkArea = new WalkAreas("The Field", Properties.Resources.walkArea2, 2);
+                    currentWalkArea = new WalkAreas("The Barn", Properties.Resources.walkArea1, 2);
 
-                    currentWalkArea.AddPerson(4, "Rina", Properties.Resources.person4, new Size(50, 80), new Point(100, 610), "I'm sure you can answer my question. \nPress 'y' to continue.");
-                    currentWalkArea.AddPerson(5, "Tommy", Properties.Resources.person5, new Size(50, 80), new Point(450, 660), "You look so smart. Can you answer this? \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(2, "Anna", Properties.Resources.person1, new Size(50, 80), new Point(150, 660), "I have a question for you. Are you ready? \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(3, "Andy", Properties.Resources.person2, new Size(50, 80), new Point(420, 660), "Can you answer my question? Let's Go! \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(4, "Bobby", Properties.Resources.person3, new Size(50, 80), new Point(600, 670), "Just answer my question please... \nPress 'y' to continue.");
                 }
                 else if (currentWalkArea.NoArea == 3)
                 {
                     currentWalkArea.RemoveAllPeople();
 
-                    currentWalkArea = new WalkAreas("The Farm", Properties.Resources.walkArea3, 3);
+                    currentWalkArea = new WalkAreas("The Field", Properties.Resources.walkArea2, 3);
 
-                    currentWalkArea.AddPerson(6, "Marie", Properties.Resources.person6, new Size(50, 80), new Point(120, 660), "Answer my question carefully.. \nPress 'y' to continue.");
-                    currentWalkArea.AddPerson(7, "Luke", Properties.Resources.person7, new Size(50, 80), new Point(470, 660), "I have a question for you. \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(5, "Rina", Properties.Resources.person4, new Size(50, 80), new Point(100, 610), "I'm sure you can answer my question. \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(6, "Tommy", Properties.Resources.person5, new Size(50, 80), new Point(450, 660), "You look so smart. Can you answer this? \nPress 'y' to continue.");
+                }
+                else if (currentWalkArea.NoArea == 4)
+                {
+                    currentWalkArea.RemoveAllPeople();
+
+                    currentWalkArea = new WalkAreas("The Farm", Properties.Resources.walkArea3, 4);
+
+                    currentWalkArea.AddPerson(7, "Marie", Properties.Resources.person6, new Size(50, 80), new Point(120, 660), "Answer my question carefully.. \nPress 'y' to continue.");
+                    currentWalkArea.AddPerson(8, "Luke", Properties.Resources.person7, new Size(50, 80), new Point(470, 660), "I have a question for you. \nPress 'y' to continue.");
                 }
 
                 currentWalkArea.DisplayPicture(this);
@@ -368,35 +383,40 @@ namespace FinderQuest
 
                 if (activePerson.NoPerson == 1)
                 {
-                    namaTempat = "Anna's House";
+                    namaTempat = "Shop";
                     gambarLatar = Resources.talkArea1;
                 }
                 else if (activePerson.NoPerson == 2)
                 {
+                    namaTempat = "Anna's House";
+                    gambarLatar = Resources.talkArea1;
+                }
+                else if (activePerson.NoPerson == 3)
+                {
                     namaTempat = "Andy's Room";
                     gambarLatar = Resources.talkArea2;
                 }
-                else if (activePerson.NoPerson == 3)
+                else if (activePerson.NoPerson == 4)
                 {
                     namaTempat = "Bobby's Office";
                     gambarLatar = Resources.talkArea3;
                 }
-                else if (activePerson.NoPerson == 4)
+                else if (activePerson.NoPerson == 5)
                 {
                     namaTempat = "Rina's Room";
                     gambarLatar = Resources.talkArea4;
                 }
-                else if (activePerson.NoPerson == 5)
+                else if (activePerson.NoPerson == 6)
                 {
                     namaTempat = "Tommy's Place";
                     gambarLatar = Resources.talkArea5;
                 }
-                else if (activePerson.NoPerson == 6)
+                else if (activePerson.NoPerson == 7)
                 {
                     namaTempat = "Marie's Place";
                     gambarLatar = Resources.talkArea6;
                 }
-                else if (activePerson.NoPerson == 7)
+                else if (activePerson.NoPerson == 8)
                 {
                     namaTempat = "Luke's House";
                     gambarLatar = Resources.talkArea7;
@@ -430,8 +450,12 @@ namespace FinderQuest
             panelTalkArea.BackgroundImage = currentTalkArea.Background;
             panelTalkArea.Visible = true;
             panelTalkArea.BringToFront();
-            
-            activePerson.Picture.Size = new Size(300, 400);
+
+            if (currentWalkArea.NoArea == 1)
+                activePerson.Picture.Size = new Size(376, 211);
+            else
+                activePerson.Picture.Size = new Size(300, 400);
+
             activePerson.Picture.Location = new Point((panelTalkArea.Width - activePerson.Picture.Width) / 2, (panelTalkArea.Height - activePerson.Picture.Height) / 2 + 120);
             activePerson.DisplayPicture(panelTalkArea);
 
@@ -450,9 +474,18 @@ namespace FinderQuest
             enterTalkArea = false;
 
             panelTalkArea.Visible = false;
-            activePerson.Picture.Size = new Size(50, 80);
+
+            if (currentWalkArea.NoArea == 1)
+            {
+                activePerson.Picture.Size = new Size(376, 211);
+            }
+            else
+            {
+                activePerson.Picture.Size = new Size(50, 80);
+            }
             activePerson.Picture.Location = activePersonLastLocation;
             activePerson.DisplayPicture(this);
+            activePerson = null;
 
             PlaySound("walk area");
         }
@@ -505,6 +538,13 @@ namespace FinderQuest
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timerPlayTime_Tick(object sender, EventArgs e)
+        {
+            playTime.AddWithSecond(1);
+
+            labelPlayer.Text = player.DisplayData();
         }
 
         private void buttonInformation_Click(object sender, EventArgs e)
