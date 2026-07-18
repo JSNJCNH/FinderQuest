@@ -59,11 +59,9 @@ namespace FinderQuest
         private void Finder_Quest_Game_Load(object sender, EventArgs e)
         {
             panelHome.Visible = true;
-            menuStrip1.Visible = false;
             panelGame.Visible = false;
             labelTime.Visible = false;
 
-            playPauseToolStripMenuItem.Enabled = false;
             timerTime.Interval = 1000;
 
             this.KeyPreview = true;
@@ -104,11 +102,7 @@ namespace FinderQuest
         {
             panelGame.Visible = true;
             labelTime.Visible = true;
-            menuStrip1.Visible = true;
-            playPauseToolStripMenuItem.Enabled = true;
             panelHome.Visible = false;
-
-            playPauseToolStripMenuItem.Text = "Pause Game";
 
             time = new Time(0, 10, 0);
             timerTime.Start();
@@ -128,7 +122,8 @@ namespace FinderQuest
 
             paused = false;
 
-            playPauseToolStripMenuItem.Text = "Pause Game";
+            this.ActiveControl = null;
+            this.Focus();
         }
 
         private void GameOver(bool isWin)
@@ -150,11 +145,7 @@ namespace FinderQuest
 
             panelGame.Visible = false;
             labelTime.Visible = false;
-            menuStrip1.Visible = false;
             panelHome.Visible = true;
-
-            playPauseToolStripMenuItem.Text = "Play/Pause";
-            playPauseToolStripMenuItem.Enabled = false;
 
             this.BackgroundImage = Properties.Resources.background;
 
@@ -446,24 +437,6 @@ namespace FinderQuest
         private void buttonInformation_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Press arrow key to move player. \n\nPress Enter to talk with the person. " + "\n\nPress Y key to answer the question. \n\nPress Esc to exit the talk area.", "How to Play");
-        }
-
-        private void playPauseToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (playPauseToolStripMenuItem.Text == "|| Pause Game")
-            {
-                paused = true;
-                timerTime.Stop();
-                playPauseToolStripMenuItem.Text = "> Play Game";
-                backSoundPlayer.controls.pause();
-            }
-            else
-            {
-                paused = false;
-                timerTime.Start();
-                playPauseToolStripMenuItem.Text = "|| Pause Game";
-                backSoundPlayer.controls.play();
-            }
         }
     }
 }
