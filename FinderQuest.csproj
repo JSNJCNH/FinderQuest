@@ -208,5 +208,14 @@
   <ItemGroup>
     <None Include="Resources\Exit Button.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Continue Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back to Menu Button.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

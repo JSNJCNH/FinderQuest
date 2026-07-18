@@ -86,7 +86,7 @@
             this.panelGame.Controls.Add(this.labelTime);
             this.panelGame.Controls.Add(this.labelArea);
             this.panelGame.Location = new System.Drawing.Point(1, 28);
-            this.panelGame.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelGame.Margin = new System.Windows.Forms.Padding(4);
             this.panelGame.Name = "panelGame";
             this.panelGame.Size = new System.Drawing.Size(1528, 97);
             this.panelGame.TabIndex = 1;
@@ -131,7 +131,7 @@
             this.panelTalkArea.BackColor = System.Drawing.Color.Transparent;
             this.panelTalkArea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panelTalkArea.Location = new System.Drawing.Point(-12, 133);
-            this.panelTalkArea.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelTalkArea.Margin = new System.Windows.Forms.Padding(4);
             this.panelTalkArea.Name = "panelTalkArea";
             this.panelTalkArea.Size = new System.Drawing.Size(1541, 785);
             this.panelTalkArea.TabIndex = 2;
@@ -214,7 +214,7 @@
             this.DoubleBuffered = true;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Finder_Quest_Game";
             this.Text = "Finder Quest Game";
             this.Load += new System.EventHandler(this.Finder_Quest_Game_Load);
