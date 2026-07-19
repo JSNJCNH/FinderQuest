@@ -476,6 +476,8 @@ namespace FinderQuest
 
         public void ExitTalkArea()
         {
+            activePerson.RemoveDialog();
+
             player.Picture.Visible = true;
             enterTalkArea = false;
 

@@ -17,6 +17,7 @@ namespace FinderQuest
         private string dialog;
         private Questions personQuestion;
         private bool solvedStatus;
+        private Label labelDialog;
 
         public People(int noPerson, string name, Image image, Size size, Point location, string dialog)
         {
@@ -70,7 +71,7 @@ namespace FinderQuest
 
         public void DisplayDialog(Control container)
         {
-            Label labelDialog = new Label();
+            labelDialog = new Label();
             labelDialog.Parent = container;
             labelDialog.Size = new Size(750, 180);
             labelDialog.Text = this.DisplayData();
@@ -112,5 +113,13 @@ namespace FinderQuest
             }
         }
 
+        public void RemoveDialog()
+        {
+            if (labelDialog != null)
+            {
+                labelDialog.Dispose();
+                labelDialog = null;
+            }
+        }
     }
 }
