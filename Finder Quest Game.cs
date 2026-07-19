@@ -22,7 +22,7 @@ namespace FinderQuest
         //calon cumlaude
         Time maxTime, playTime;
 
-        int numOfWalkArea = 3;
+        int numOfWalkArea = 4;
         WalkAreas currentWalkArea = null;
         TalkAreas currentTalkArea = null;
 
@@ -36,7 +36,7 @@ namespace FinderQuest
         WindowsMediaPlayer backSoundPlayer = new WindowsMediaPlayer();
         WindowsMediaPlayer otherSoundPlayer;
 
-        bool isWin, paused = false;
+        bool isWin, paused = false, started = false;
 
         public List<Record> listLeaderboard = new List<Record>();
         string fileDefLeaderboard = "Leaderboard.dat";
@@ -68,7 +68,6 @@ namespace FinderQuest
 
             panelTalkArea.Visible = false;
 
-            
             buttonStart.FlatAppearance.BorderSize = 0;
 
             DaftarSoal.Add(new Questions("Berapa hasil dari 2 + 2?", "4", 20));
@@ -156,6 +155,8 @@ namespace FinderQuest
 
         private void StartGame()
         {
+            started = true;
+
             panelGame.Visible = true;
             panelGame.Focus();
             labelTime.Visible = true;
@@ -186,6 +187,8 @@ namespace FinderQuest
 
         private void GameOver(bool isWin)
         {
+            started = false;
+
             timerPlayTime.Stop();
 
             if(isWin && player != null)
@@ -289,7 +292,7 @@ namespace FinderQuest
                     {
                         ExitTalkArea();
                     }
-                    else if (paused == false)
+                    else if (started != false)
                     {
                         paused = true;
                         timerTime.Stop();
@@ -298,11 +301,42 @@ namespace FinderQuest
                         FormPause form = new FormPause();
                         form.Size = this.ClientSize;
                         form.Location = this.PointToScreen(Point.Empty);
-                        form.ShowDialog();
+                        DialogResult result = form.ShowDialog();
 
-                        paused = false;
-                        timerTime.Start();
-                        backSoundPlayer.controls.play();
+                        if (result == DialogResult.Abort)
+                        {
+                            started = false;
+                            timerPlayTime.Stop();
+
+                            enterTalkArea = false;
+                            panelTalkArea.Visible = false;
+                            activePerson = null;
+
+                            panelGame.Visible = false;
+                            labelTime.Visible = false;
+                            panelHome.Visible = true;
+
+                            this.BackgroundImage = Properties.Resources.background;
+
+                            if (currentWalkArea != null)
+                            {
+                                currentWalkArea.RemoveAllPeople();
+                                currentWalkArea = null;
+                            }
+
+                            if (player != null && player.Picture != null)
+                            {
+                                this.Controls.Remove(player.Picture);
+                                player.Picture.Dispose();
+                                player = null;
+                            }
+                        }
+                        else
+                        {
+                            paused = false;
+                            timerTime.Start();
+                            backSoundPlayer.controls.play();
+                        }
                     }
                 }
                 else if (e.KeyCode == Keys.Y && activePerson?.NoPerson == 1)

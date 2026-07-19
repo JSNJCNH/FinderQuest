@@ -28,33 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonExit = new System.Windows.Forms.Button();
-            this.buttonInformation = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonContinue = new System.Windows.Forms.PictureBox();
+            this.buttonInfo = new System.Windows.Forms.PictureBox();
+            this.buttonBackToMenu = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonContinue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonBackToMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonExit
+            // pictureBox1
             // 
-            this.buttonExit.BackgroundImage = global::FinderQuest.Properties.Resources.Exit_Button;
-            this.buttonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonExit.Location = new System.Drawing.Point(506, 440);
-            this.buttonExit.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonExit.Name = "buttonExit";
-            this.buttonExit.Size = new System.Drawing.Size(150, 50);
-            this.buttonExit.TabIndex = 6;
-            this.buttonExit.UseVisualStyleBackColor = true;
-            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            this.pictureBox1.BackgroundImage = global::FinderQuest.Properties.Resources.Menu_Button;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(375, 260);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(433, 357);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // buttonInformation
+            // buttonContinue
             // 
-            this.buttonInformation.BackgroundImage = global::FinderQuest.Properties.Resources.Info_Button;
-            this.buttonInformation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonInformation.Location = new System.Drawing.Point(506, 370);
-            this.buttonInformation.Margin = new System.Windows.Forms.Padding(2);
-            this.buttonInformation.Name = "buttonInformation";
-            this.buttonInformation.Size = new System.Drawing.Size(150, 50);
-            this.buttonInformation.TabIndex = 5;
-            this.buttonInformation.UseVisualStyleBackColor = true;
-            this.buttonInformation.Click += new System.EventHandler(this.buttonInformation_Click);
+            this.buttonContinue.BackgroundImage = global::FinderQuest.Properties.Resources.Continue_Button;
+            this.buttonContinue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonContinue.Location = new System.Drawing.Point(375, 260);
+            this.buttonContinue.Name = "buttonContinue";
+            this.buttonContinue.Size = new System.Drawing.Size(433, 92);
+            this.buttonContinue.TabIndex = 1;
+            this.buttonContinue.TabStop = false;
+            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
+            // 
+            // buttonInfo
+            // 
+            this.buttonInfo.BackgroundImage = global::FinderQuest.Properties.Resources.Info_Setting_Button;
+            this.buttonInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonInfo.Location = new System.Drawing.Point(375, 393);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(433, 92);
+            this.buttonInfo.TabIndex = 2;
+            this.buttonInfo.TabStop = false;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
+            // 
+            // buttonBackToMenu
+            // 
+            this.buttonBackToMenu.BackgroundImage = global::FinderQuest.Properties.Resources.Back_to_Menu_Button;
+            this.buttonBackToMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonBackToMenu.Location = new System.Drawing.Point(375, 523);
+            this.buttonBackToMenu.Name = "buttonBackToMenu";
+            this.buttonBackToMenu.Size = new System.Drawing.Size(433, 94);
+            this.buttonBackToMenu.TabIndex = 3;
+            this.buttonBackToMenu.TabStop = false;
+            this.buttonBackToMenu.Click += new System.EventHandler(this.buttonBackToMenu_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::FinderQuest.Properties.Resources.Paused_Title;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(339, 110);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(509, 118);
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
             // 
             // FormPause
             // 
@@ -62,8 +99,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1163, 783);
-            this.Controls.Add(this.buttonExit);
-            this.Controls.Add(this.buttonInformation);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.buttonBackToMenu);
+            this.Controls.Add(this.buttonInfo);
+            this.Controls.Add(this.buttonContinue);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
             this.Name = "FormPause";
@@ -73,13 +113,21 @@
             this.Text = "FormPause";
             this.Load += new System.EventHandler(this.FormPause_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormPause_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonContinue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonBackToMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Button buttonInformation;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox buttonContinue;
+        private System.Windows.Forms.PictureBox buttonInfo;
+        private System.Windows.Forms.PictureBox buttonBackToMenu;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

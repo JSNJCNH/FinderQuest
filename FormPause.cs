@@ -30,15 +30,20 @@ namespace FinderQuest
             }
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void buttonContinue_Click(object sender, EventArgs e)
         {
-            this.DialogResult = DialogResult.Abort;
             this.Close();
         }
 
-        private void buttonInformation_Click(object sender, EventArgs e)
+        private void buttonInfo_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Press arrow key to move player. \n\nPress Enter to talk with the person. " + "\n\nPress Y key to answer the question. \n\nPress Esc to exit the talk area.", "How to Play");
+        }
+
+        private void buttonBackToMenu_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Abort;
+            this.Close();
         }
     }
 }
