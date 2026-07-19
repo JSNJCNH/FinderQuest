@@ -64,6 +64,13 @@ namespace FinderQuest
             }
         }
 
+        public int JumlahBeliWeapon1 { get; set; } = 0;
+        public int JumlahBeliWeapon2 { get; set; } = 0;
+        public int JumlahBeliWeapon3 { get; set; } = 0;
+        public int JumlahBeliHealth { get; set; } = 0;
+        public int JumlahBeliTime { get; set; } = 0;
+        public int JumlahBeliAnswerKey { get; set; } = 0;
+
         public Time PlayTime { get => playTime; set => playTime = value; }
         public Time MaxTime { get => maxTime; set => maxTime = value; }
 

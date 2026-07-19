@@ -130,6 +130,9 @@
   <data name="talkArea5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Start Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Start Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -166,14 +169,17 @@
   <data name="talkArea2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Weapon 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Weapon 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="talkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="player_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\player_front.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Waapon 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Waapon 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="person6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,14 +187,26 @@
   <data name="player_right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player_right.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Potion Time" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Potion Time.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="walkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\walkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Potion Health" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Potion Health.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Paused Title" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Paused Title.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Merchant Character" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Merchant Character.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="person3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Waapon 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Waapon 21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Info Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Info Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,8 +214,8 @@
   <data name="person2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Start Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Start Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="player_front" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player_front.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="player_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\player_back.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -211,10 +229,19 @@
   <data name="Back to Menu Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Back to Menu Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BackgroundMerchant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackgroundMerchant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paper Aswer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paper Aswer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="talkArea1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Merchant Character" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Merchant Character.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Weapon 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Weapon 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Buy Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buy Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

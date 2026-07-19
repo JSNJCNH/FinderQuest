@@ -83,9 +83,29 @@ namespace FinderQuest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BackgroundMerchant {
+            get {
+                object obj = ResourceManager.GetObject("BackgroundMerchant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap backgroundQuestion {
             get {
                 object obj = ResourceManager.GetObject("backgroundQuestion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Buy_Button {
+            get {
+                object obj = ResourceManager.GetObject("Buy Button", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +176,16 @@ namespace FinderQuest.Properties {
         internal static System.Drawing.Bitmap Merchant_Character {
             get {
                 object obj = ResourceManager.GetObject("Merchant Character", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Paper_Aswer {
+            get {
+                object obj = ResourceManager.GetObject("Paper Aswer", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +313,26 @@ namespace FinderQuest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Potion_Health {
+            get {
+                object obj = ResourceManager.GetObject("Potion Health", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Potion_Time {
+            get {
+                object obj = ResourceManager.GetObject("Potion Time", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Start_Button {
             get {
                 object obj = ResourceManager.GetObject("Start Button", resourceCulture);
@@ -363,6 +413,26 @@ namespace FinderQuest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Waapon_2 {
+            get {
+                object obj = ResourceManager.GetObject("Waapon 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Waapon_21 {
+            get {
+                object obj = ResourceManager.GetObject("Waapon 21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap walkArea1 {
             get {
                 object obj = ResourceManager.GetObject("walkArea1", resourceCulture);
@@ -386,6 +456,26 @@ namespace FinderQuest.Properties {
         internal static System.Drawing.Bitmap walkArea3 {
             get {
                 object obj = ResourceManager.GetObject("walkArea3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Weapon_1 {
+            get {
+                object obj = ResourceManager.GetObject("Weapon 1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Weapon_3 {
+            get {
+                object obj = ResourceManager.GetObject("Weapon 3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

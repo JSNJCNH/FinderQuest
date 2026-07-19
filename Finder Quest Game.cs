@@ -68,7 +68,7 @@ namespace FinderQuest
 
             panelTalkArea.Visible = false;
 
-            //Supaya Button Start tidak terlalu terhover dan berwarna putih
+            
             buttonStart.FlatAppearance.BorderSize = 0;
 
             DaftarSoal.Add(new Questions("Berapa hasil dari 2 + 2?", "4", 20));
@@ -116,16 +116,16 @@ namespace FinderQuest
             DaftarSoal.Add(new Questions("Palung laut terdalam di dunia adalah?", "Palung Mariana", 100));
             DaftarSoal.Add(new Questions("Candi Borobudur terletak di provinsi?", "Jawa Tengah", 100));
             DaftarSoal.Add(new Questions("Negara terkecil di dunia berdasarkan luas wilayah adalah?", "Vatikan", 100));
-            DaftarSoal.Add(new Questions("What is the chemical compound name for sulfuric acid?", "H2SO4", 150));
-            DaftarSoal.Add(new Questions("I have this pattern: \n 1  1  2  3  5  8 ... \nWhat is the next number?", "13", 150));
+            DaftarSoal.Add(new Questions("What is the chemical compound name for sulfuric acid?", "H2SO4", 100));
+            DaftarSoal.Add(new Questions("I have this pattern: \n 1  1  2  3  5  8 ... \nWhat is the next number?", "13", 100));
 
-            DaftarSoal.Add(new Questions("Check this C# codes: \n int result = 10/100; \nMessageBox.Show(result); \nWhat is the output?", "0", 200));
-            DaftarSoal.Add(new Questions("A product costs $100, discounted 10%, plus $5 shipping. \nHow much do you pay?", "95", 200));
-            DaftarSoal.Add(new Questions("What is the 1st principle (sila ke-1) of Pancasila?", "Ketuhanan Yang Maha Esa", 200));
-            DaftarSoal.Add(new Questions("Berapa nilai dari integral dari 2x dx?", "x^2 + C", 200));
-            DaftarSoal.Add(new Questions("Berapa hasil dari 2 pangkat 10?", "1024", 200));
-            DaftarSoal.Add(new Questions("Berapa turunan kedua dari fungsi x^3?", "6x", 200));
-            DaftarSoal.Add(new Questions("Berapa nilai dari 5 faktorial (5!)?", "120", 200));
+            DaftarSoal.Add(new Questions("Check this C# codes: \n int result = 10/100; \nMessageBox.Show(result); \nWhat is the output?", "0", 100));
+            DaftarSoal.Add(new Questions("A product costs $100, discounted 10%, plus $5 shipping. \nHow much do you pay?", "95", 100));
+            DaftarSoal.Add(new Questions("What is the 1st principle (sila ke-1) of Pancasila?", "Ketuhanan Yang Maha Esa", 100));
+            DaftarSoal.Add(new Questions("Berapa nilai dari integral dari 2x dx?", "x^2 + C", 100));
+            DaftarSoal.Add(new Questions("Berapa hasil dari 2 pangkat 10?", "1024", 100));
+            DaftarSoal.Add(new Questions("Berapa turunan kedua dari fungsi x^3?", "6x", 100));
+            DaftarSoal.Add(new Questions("Berapa nilai dari 5 faktorial (5!)?", "120", 100));
 
             soalTersedia = new List<Questions>(DaftarSoal);
         }
@@ -305,6 +305,12 @@ namespace FinderQuest
                         backSoundPlayer.controls.play();
                     }
                 }
+                else if (e.KeyCode == Keys.Y && activePerson?.NoPerson == 1)
+                {
+                    MerchantForm form = new MerchantForm();
+                    form.Owner = this;
+                    form.ShowDialog();
+                }
                 else if (e.KeyCode == Keys.Y && activePerson?.SolvedStatus == false && activePerson.NoPerson != 1)
                 {
                     FormQuestion form = new FormQuestion();
@@ -424,7 +430,7 @@ namespace FinderQuest
 
                 currentTalkArea = new TalkAreas(namaTempat, gambarLatar, activePerson);
 
-                // Kasih soal random cuma kalau NPC ini belum punya soal
+                
                 if (activePerson.PersonQuestion == null)
                 {
                     Random rnd = new Random();

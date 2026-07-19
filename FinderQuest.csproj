@@ -98,6 +98,9 @@
     <EmbeddedResource Include="FormQuestion.resx">
       <DependentUpon>FormQuestion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MerchantForm.resx">
+      <DependentUpon>MerchantForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -231,6 +234,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Merchant Character.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundMerchant.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weapon 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waapon 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Weapon 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Waapon 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Potion Time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Potion Health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paper Aswer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buy Button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
