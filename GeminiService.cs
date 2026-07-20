@@ -22,7 +22,7 @@ namespace FinderQuest
 
         public GeminiService()
         {
-            apiKey = "AQ.Ab8RN6L2KlopdMNy_uk1ILmvyuRDdb4_un1JAYdcsg4LuQPHPw";
+            apiKey = "";
 
             if (string.IsNullOrEmpty(apiKey))
                 throw new InvalidOperationException("GEMINI_API_KEY belum di-set di environment variable.");

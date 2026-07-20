@@ -207,8 +207,8 @@ namespace FinderQuest
         private void UpdateHealthDisplay()
         {
             // Tambahkan Label bernama "labelHP" di Form1 lewat Designer
-            labelHP.Text = $"HP: {player.HP} / 100";
-            players.Hp = player;
+            labelHP.Text = $"HP: {players.Hp} / 100";
+        
         }
 
         private void SpawnWallWithGapKanan()

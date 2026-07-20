@@ -8,7 +8,7 @@ using System.Windows.Forms;
 namespace FinderQuest
 {
     [Serializable]
-    public class MiniGamePlayer : Players
+    public class MiniGamePlayer
     {
         private PictureBox picture;
         bool goRight = false;
@@ -16,7 +16,7 @@ namespace FinderQuest
         bool goUp = false;
         bool goDown = false;
 
-        public MiniGamePlayer(Image imageMinigame, Size sizeMiniGame, Point playerLocation, string name, Image image, Size size, Point location, Time playTime, Time maxTime) :base (name, image, size, location, playTime, maxTime)
+        public MiniGamePlayer(Image image, Size size, Point playerLocation)
         {
             this.Picture = new PictureBox();
             this.Picture.Image = image;
@@ -28,9 +28,10 @@ namespace FinderQuest
         private bool isInvincible = false;
         private int invincibilityTimer = 0;
         private const int invincibilityDuration = 60;
-}
+
         public bool IsInvincible { get => isInvincible; }
-        public bool IsDead => this.Hp <= 0;
+        int hp = 100;
+        public bool IsDead => hp <= 0;
 
 
         public PictureBox Picture
@@ -87,8 +88,8 @@ namespace FinderQuest
         {
             if (isInvincible || IsDead) return;
 
-            this.Hp -= damage;
-            if (this.Hp < 0) this.Hp = 0;
+            hp -= damage;
+            if (hp < 0) hp = 0;
 
             isInvincible = true;
             invincibilityTimer = invincibilityDuration;
