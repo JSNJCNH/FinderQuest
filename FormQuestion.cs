@@ -73,6 +73,8 @@ namespace FinderQuest
             {
                 frmGame.player.JumlahBeliHealth--;
 
+                frmGame.player.HP += 100;
+
                 MessageBox.Show("Potion Health digunakan!");
                 UpdateJumlahItem();
             }
@@ -87,6 +89,8 @@ namespace FinderQuest
             if (frmGame.player.JumlahBeliAnswerKey > 0)
             {
                 frmGame.player.JumlahBeliAnswerKey--;
+
+                MessageBox.Show("Jawabannya adalah: " + frmGame.activePerson.PersonQuestion.Answer);
 
                 textBoxAnswer.Text = frmGame.activePerson.PersonQuestion.Answer;
 
@@ -104,6 +108,8 @@ namespace FinderQuest
             if (frmGame.player.JumlahBeliTime > 0)
             {
                 frmGame.player.JumlahBeliTime--;
+
+                frmGame.player.MaxTime.AddWithSecond(60);
 
                 MessageBox.Show("Potion Time digunakan!");
                 UpdateJumlahItem();

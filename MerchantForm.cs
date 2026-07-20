@@ -92,8 +92,12 @@ namespace FinderQuest
                 {
                     frmGame.player.JumlahBeliTime++;
                 }
+                else if (namaItemDipilih == "Answer Key")
+                {
+                    frmGame.player.JumlahBeliAnswerKey++;
+                }
 
-                MessageBox.Show($"Berhasil membeli {namaItemDipilih}!");
+                    MessageBox.Show($"Berhasil membeli {namaItemDipilih}!");
 
                 namaItemDipilih = "";
                 hargaItemDipilih = 0;

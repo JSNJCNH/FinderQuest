@@ -15,7 +15,7 @@ namespace FinderQuest
         private int score;
         private Time playTime;
         private Time maxTime; //ini yg 10 menit
-            
+
 
         #region constructor
         public Players(string name, Image image, Size size, Point location, Time playTime, Time maxTime)
@@ -28,6 +28,7 @@ namespace FinderQuest
             this.Score = 0;
             this.PlayTime = playTime;
             this.MaxTime = maxTime;
+            this.HP = 100;
         }
         #endregion
 
@@ -70,6 +71,7 @@ namespace FinderQuest
         public int JumlahBeliHealth { get; set; } = 0;
         public int JumlahBeliTime { get; set; } = 0;
         public int JumlahBeliAnswerKey { get; set; } = 0;
+        public int HP { get; set; } = 100;
 
         public Time PlayTime { get => playTime; set => playTime = value; }
         public Time MaxTime { get => maxTime; set => maxTime = value; }
