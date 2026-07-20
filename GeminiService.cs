@@ -20,19 +20,19 @@ namespace FinderQuest
         private const string model = "gemini-3.5-flash"; // sesuaikan dengan model yang mau kamu pakai
         private string apiUrl;
 
-        public GeminiService()
-        {
-            apiKey = "App.config";
+        //public GeminiService()
+        //{
+        //    apiKey = "test";
 
-            if (string.IsNullOrEmpty(apiKey))
-                throw new InvalidOperationException("GEMINI_API_KEY belum di-set di environment variable.");
+        //    if (string.IsNullOrEmpty(apiKey))
+        //        throw new InvalidOperationException("GEMINI_API_KEY belum di-set di environment variable.");
 
-            apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent";
+        //    apiUrl = "https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent";
 
-            client = new HttpClient();
-            client.DefaultRequestHeaders.Add("x-goog-api-key", apiKey);
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        }
+        //    client = new HttpClient();
+        //    client.DefaultRequestHeaders.Add("x-goog-api-key", apiKey);
+        //    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        //}
 
         public async Task<AIEvaluationResult> EvaluateAnswerAsync(string question, string referenceAnswer, string userAnswer)
         {
