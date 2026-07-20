@@ -13,6 +13,7 @@ namespace FinderQuest
         private string name;
         private PictureBox picture;
         private int score;
+        private int hp;
         private Time playTime;
         private Time maxTime; //ini yg 10 menit
             
@@ -28,6 +29,7 @@ namespace FinderQuest
             this.Score = 0;
             this.PlayTime = playTime;
             this.MaxTime = maxTime;
+            this.Hp = 100;
         }
         #endregion
 
@@ -63,6 +65,8 @@ namespace FinderQuest
                 }
             }
         }
+
+        public int Hp {get => hp; set => hp = value; }
 
         public int JumlahBeliWeapon1 { get; set; } = 0;
         public int JumlahBeliWeapon2 { get; set; } = 0;

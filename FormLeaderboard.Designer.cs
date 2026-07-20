@@ -34,17 +34,20 @@
             // listBoxLeaderboard
             // 
             this.listBoxLeaderboard.FormattingEnabled = true;
-            this.listBoxLeaderboard.Location = new System.Drawing.Point(12, 12);
+            this.listBoxLeaderboard.ItemHeight = 16;
+            this.listBoxLeaderboard.Location = new System.Drawing.Point(16, 15);
+            this.listBoxLeaderboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxLeaderboard.Name = "listBoxLeaderboard";
-            this.listBoxLeaderboard.Size = new System.Drawing.Size(556, 420);
+            this.listBoxLeaderboard.Size = new System.Drawing.Size(740, 516);
             this.listBoxLeaderboard.TabIndex = 0;
             // 
             // FormLeaderboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 450);
+            this.ClientSize = new System.Drawing.Size(773, 554);
             this.Controls.Add(this.listBoxLeaderboard);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormLeaderboard";
             this.Text = "FormLeaderboard";
             this.Load += new System.EventHandler(this.FormLeaderboard_Load);
