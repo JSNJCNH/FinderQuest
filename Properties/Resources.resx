@@ -148,6 +148,9 @@
   <data name="Buy Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Buy Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="dark-fantasy-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dark-fantasy-scene.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Leaderboard Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Leaderboard Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,6 +165,9 @@
   </data>
   <data name="person4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Boss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Boss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Info Setting Button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Info Setting Button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -180,6 +186,12 @@
   </data>
   <data name="person7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\person7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Player Orb Asset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Player Orb Asset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bullet Projectiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bullet Projectiles.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="talkArea3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\talkArea3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -244,7 +256,7 @@
   <data name="Weapon 3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Weapon 3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Boss" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Boss.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="futuristic-sci-fi-techno-lights-perfect-futuristic-backgrounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\futuristic-sci-fi-techno-lights-perfect-futuristic-backgrounds.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

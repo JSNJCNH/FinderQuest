@@ -20,6 +20,9 @@ namespace FinderQuest
     public partial class Finder_Quest_Game : Form
     {
         //calon cumlaude
+        Time maxTime, playTime;
+
+        int numOfWalkArea = 5;
         int numOfWalkArea = 4;
         WalkAreas currentWalkArea = null;
         TalkAreas currentTalkArea = null;
@@ -51,11 +54,6 @@ namespace FinderQuest
         public Finder_Quest_Game()
         {
             InitializeComponent();
-        }
-
-        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Press arrow key to move player. \n\nPress Enter to talk with the person. " +"\n\nPress Y key to answer the question. \n\nPress Esc to exit the talk area.", "How to Play");
         }
 
         private void Finder_Quest_Game_Load(object sender, EventArgs e)
@@ -163,7 +161,6 @@ namespace FinderQuest
 
             panelGame.Visible = true;
             panelGame.Focus();
-            labelTime.Visible = true;
             panelHome.Visible = false;
 
             timerPlayTime.Start();
@@ -238,6 +235,7 @@ namespace FinderQuest
                         {
                             currentWalkArea.NoArea++;
                             GenerateWalkArea();
+                            labelTime.Visible = true;
                         }
                         else if (currentWalkArea.CheckFinishAllQuestions())
                         {
@@ -354,6 +352,8 @@ namespace FinderQuest
             }
         }
 
+        }
+
         private void GenerateWalkArea()
         {
             try
@@ -392,6 +392,14 @@ namespace FinderQuest
 
                     currentWalkArea.AddPerson(7, "Marie", Properties.Resources.person6, new Size(50, 80), new Point(120, 660), "Answer my question carefully.. \nPress 'y' to continue.");
                     currentWalkArea.AddPerson(8, "Luke", Properties.Resources.person7, new Size(50, 80), new Point(470, 660), "I have a question for you. \nPress 'y' to continue.");
+                }
+                else if (currentWalkArea.NoArea == 5)
+                {
+                    currentWalkArea.RemoveAllPeople();
+
+                    currentWalkArea = new WalkAreas("The Boss", Properties.Resources.dark_fantasy_background, 5);
+
+                    currentWalkArea.AddPerson(9, "THE BOSS", Properties.Resources.Boss, new Size(1000, 1000), new Point(277, 41), "WHO DO YOU DARE TO COME HERE \nPress 'y' to continue.");
                 }
 
                 currentWalkArea.DisplayPicture(this);

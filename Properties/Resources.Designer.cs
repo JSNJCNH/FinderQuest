@@ -113,6 +113,16 @@ namespace FinderQuest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bullet_Projectiles {
+            get {
+                object obj = ResourceManager.GetObject("Bullet Projectiles", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Buy_Button {
             get {
                 object obj = ResourceManager.GetObject("Buy Button", resourceCulture);
@@ -133,9 +143,29 @@ namespace FinderQuest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dark_fantasy_background {
+            get {
+                object obj = ResourceManager.GetObject("dark-fantasy-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Exit_Button {
             get {
                 object obj = ResourceManager.GetObject("Exit Button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap futuristic_sci_fi_techno_lights_perfect_futuristic_backgrounds {
+            get {
+                object obj = ResourceManager.GetObject("futuristic-sci-fi-techno-lights-perfect-futuristic-backgrounds", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +336,16 @@ namespace FinderQuest.Properties {
         internal static System.Drawing.Bitmap player_left {
             get {
                 object obj = ResourceManager.GetObject("player_left", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Player_Orb_Asset {
+            get {
+                object obj = ResourceManager.GetObject("Player Orb Asset", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TimeApplication
+namespace FinderQuest
 {
-    [Serializable]
-    public class Time
+    public class PunishmentTime
     {
         private int hour;
         private int minute;
@@ -15,7 +14,7 @@ namespace TimeApplication
         #region constructors
 
         //default constructor
-        public Time()
+        public PunishmentTime()
         {
             this.Hour = 1;
             this.Minute = 2;
@@ -23,7 +22,7 @@ namespace TimeApplication
         }
 
         //parameterized constructor
-        public Time(int hh, int mm, int ss)
+        public PunishmentTime(int hh, int mm, int ss)
         {
             this.Hour = hh;
             this.Minute = mm;
@@ -109,11 +108,12 @@ namespace TimeApplication
         public string DisplayData()
         {
             string data = this.Hour.ToString().PadLeft(2, '0') + ":" +
-                          this.Minute.ToString().PadLeft(2, '0') + ":" +
-                          this.Second.ToString().PadLeft(2, '0');
+                            this.Minute.ToString().PadLeft(2, '0') + ":" +
+                            this.Second.ToString().PadLeft(2, '0');
             return data;
         }
 
         #endregion
+        
     }
 }
