@@ -40,10 +40,10 @@ namespace FinderQuest
 
         public string DisplayData()
         {
-            Time time = new Time(0, 10, 0);
-            time.AddWithSecond(-(this.Time.ConvertToSecond()));
+            Time time = new Time(0, 0, 0);
+            time.AddWithSecond(this.Time.ConvertToSecond());
 
-            return $"{this.Name}\t\t\t{time.DisplayData()}\t\t\t{this.Score}"; 
+            return $"{this.Name}\t\t\t{time.DisplayData()}"; 
         }
     }
 }

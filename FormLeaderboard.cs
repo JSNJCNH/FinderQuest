@@ -24,7 +24,7 @@ namespace FinderQuest
             formGame = (Finder_Quest_Game) this.Owner;
 
             listBoxLeaderboard.Items.Clear();
-            listBoxLeaderboard.Items.Add("Name\t\t\tPlay Time\t\t\tScore");
+            listBoxLeaderboard.Items.Add("Name\t\t\tPlay Time");
 
             foreach(Record record in formGame.listLeaderboard)
             {

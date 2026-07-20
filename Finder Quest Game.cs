@@ -20,8 +20,6 @@ namespace FinderQuest
     public partial class Finder_Quest_Game : Form
     {
         //calon cumlaude
-        Time maxTime, playTime;
-
         int numOfWalkArea = 4;
         WalkAreas currentWalkArea = null;
         TalkAreas currentTalkArea = null;
@@ -40,6 +38,12 @@ namespace FinderQuest
 
         public List<Record> listLeaderboard = new List<Record>();
         string fileDefLeaderboard = "Leaderboard.dat";
+
+        public BindingList<Players> listPlayers = new BindingList<Players>();
+        string fileDefPlayers = "Players.dat";
+
+        public Time maxTime = new Time(0, 10, 0);
+        public Time playTime = new Time(0, 0, 0);
 
         public List<Questions> DaftarSoal = new List<Questions>();
         private List<Questions> soalTersedia = new List<Questions>();
@@ -162,8 +166,6 @@ namespace FinderQuest
             labelTime.Visible = true;
             panelHome.Visible = false;
 
-            maxTime = new Time(0, 10, 0);
-            playTime = new Time(0, 0, 0);
             timerPlayTime.Start();
 
             if (currentWalkArea != null)
@@ -171,8 +173,6 @@ namespace FinderQuest
 
             currentWalkArea = null;
             GenerateWalkArea();
-
-            player = new Players("John", Properties.Resources.player_right, new Size(50, 80), new Point(10, 660), playTime, maxTime);
 
             labelPlayer.Text = player.DisplayData();
             player.DisplayPicture(this);
@@ -352,11 +352,6 @@ namespace FinderQuest
                     form.ShowDialog();
                 }
             }
-        }
-
-        private void StartNewGameToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            StartGame();
         }
 
         private void GenerateWalkArea()
@@ -565,13 +560,34 @@ namespace FinderQuest
             file.Close();
         }
 
+        public void LoadLeaderboard(string fileName)
+        {
+            if (File.Exists(fileName))
+            {
+                FileStream file = new FileStream(fileName, FileMode.Open, FileAccess.Read);
+                BinaryFormatter formatter = new BinaryFormatter();
+                listLeaderboard = (List<Record>)formatter.Deserialize(file);
+                file.Close();
+            }
+        }
+
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            StartGame();
+            FormLogin form = new FormLogin();
+            form.Owner = this;
+            form.StartPosition = FormStartPosition.CenterParent;
+            DialogResult result = form.ShowDialog();
+
+            if (result != DialogResult.Abort)
+            {
+                StartGame();
+            }
         }
 
         private void buttonLeaderboard_Click(object sender, EventArgs e)
         {
+            LoadLeaderboard(fileDefLeaderboard);
+
             FormLeaderboard form = new FormLeaderboard();
             form.Owner = this;
             form.ShowDialog();
