@@ -14,8 +14,9 @@ namespace FinderQuest
 {
     public partial class FormMiniGame : Form
     {
+        FormQuestion formQuestion;
+
         PunishmentTime maxTime;
-        Players players;
         bool berhasilPunishment;
 
         // Durasi minigame dalam detik, default 10 detik sesuai fase dodge boss
@@ -36,7 +37,9 @@ namespace FinderQuest
 
         private void FormMiniGame_Load(object sender, EventArgs e)
         {
-            player = new MiniGamePlayer(Properties.Resources.Player_Orb_Asset, new Size(20, 20), new Point(240, 323));
+            formQuestion = (FormQuestion) this.Owner;
+
+            player = new MiniGamePlayer(Properties.Resources.Player_Orb_Asset, new Size(20, 20), new Point(240, 323), formQuestion.frmGame.player.Hp);
             player.DisplayPicture(this);
 
             labelTimePunishment.Visible = true;
@@ -207,7 +210,7 @@ namespace FinderQuest
         private void UpdateHealthDisplay()
         {
             // Tambahkan Label bernama "labelHP" di Form1 lewat Designer
-            labelHP.Text = $"HP: {players.Hp} / 100";
+            labelHP.Text = $"HP: {player.Hp} / 100";
         
         }
 

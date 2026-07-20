@@ -15,7 +15,7 @@ namespace FinderQuest
 {
     public partial class FormQuestion : Form
     {
-        Finder_Quest_Game frmGame;
+        public Finder_Quest_Game frmGame;
 
         // === Boss battle fields ===
         private bool isBossBattle = false;

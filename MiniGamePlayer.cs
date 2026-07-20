@@ -16,12 +16,13 @@ namespace FinderQuest
         bool goUp = false;
         bool goDown = false;
 
-        public MiniGamePlayer(Image image, Size size, Point playerLocation)
+        public MiniGamePlayer(Image image, Size size, Point playerLocation, int HP)
         {
             this.Picture = new PictureBox();
             this.Picture.Image = image;
             this.Picture.Size = size;
             this.Picture.Location = playerLocation;
+            this.Hp = HP;
         }
 
         //Player Health
@@ -30,7 +31,7 @@ namespace FinderQuest
         private const int invincibilityDuration = 60;
 
         public bool IsInvincible { get => isInvincible; }
-        int hp = 100;
+        private int hp;
         public bool IsDead => hp <= 0;
 
 
@@ -43,6 +44,7 @@ namespace FinderQuest
         public bool GoLeft { get => goLeft; set => goLeft = value; }
         public bool GoUp { get => goUp; set => goUp = value; }
         public bool GoDown { get => goDown; set => goDown = value; }
+        public int Hp { get => hp; set => hp = value; }
 
         #region MovementPlayer
         // 1. The Core Helper (The only place where the Point actually changes)
